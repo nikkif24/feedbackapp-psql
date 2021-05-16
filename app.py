@@ -11,7 +11,7 @@ if ENV == 'prod':
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:CompSci2021@localhost/lotus'
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://mfmbfcwrjrpova:4c3c26ef6101adadc5877e92358a4afea07ea37a716e611d4b4fa9cc3f42772b@ec2-18-215-111-67.compute-1.amazonaws.com:5432/d65sj0vieqtoj9'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://tgmucrapolovcb:421c865cefd2cf7b35807199be1f4ea8bcd33e5f906068b7dca83d5f5b69a238@ec2-3-234-85-177.compute-1.amazonaws.com:5432/denvgvr9hquhu4'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
