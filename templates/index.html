@@ -9,8 +9,8 @@
   </head>
   <body>
     <div class="container">
-      <img src="../static/logo.jpg" alt="Lexus" class="logo" />
-      {% if message %}
+      <img src="../static/logo.jpg" alt="Lotus" class="logo" />
+     {% if message %}
       <p class="message">{{ message | safe }}</p>
       {% endif %} 
       <form action="/submit" method="POST">
@@ -19,21 +19,21 @@
           <input
             type="text"
             name="customer"
-            placeholder="Name of vehicle owner"
+            placeholder="Email of customer"
           />
         </div>
         <div class="form-group">
-          <h3>Dealer</h3>
-          <select name="dealer">
-            <option value="">Select Dealer</option>
-            <option value="Tom Smith">Tom Smith</option>
-            <option value="Karen Swanson">Karen Swanson</option>
-            <option value="Jim Johnson">Jim Johnson</option>
-            <option value="Shauna Gifford">Shauna Gifford</option>
+          <h3>Purchase</h3>
+          <select name="purchase">
+            <option value="">Select Jewelry Type</option>
+            <option value="Necklace">Necklace</option>
+            <option value="Bracelet">Bracelet</option>
+            <option value="Ring">Ring</option>
+            <option value="Earrings">Earrings</option>
           </select>
         </div>
         <div class="form-group">
-          <h3>Please rate your dealer</h3>
+          <h3>Please rate our service</h3>
           <input type="radio" name="rating" value="1" /> 1
           <input type="radio" name="rating" value="2" /> 2
           <input type="radio" name="rating" value="3" /> 3
